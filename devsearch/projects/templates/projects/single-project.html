@@ -1,4 +1,10 @@
 {% extends 'main.html' %} {% block content %}
 
 <h1>Single Project</h1>
-{% endblock content %}
+
+{% if project %}
+<h1>{{project.title}}</h1>
+<p>{{project.description}}</p>
+{% else %}
+<p>No project</p>
+{% endif %} {% endblock content %}
