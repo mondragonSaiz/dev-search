@@ -1,6 +1,5 @@
 {% extends 'main.html' %} {% block content %}
 <h1>All projects</h1>
-{%if projectList %} {% for project in projectList%}
+{%if projects %} {% for project in projects%}
 <li><a href={% url 'project' project.id%}>{{project.title}}</a> -- {{project.description}}</li>
-
 {% endfor %} {% endif %} {% endblock content%}
