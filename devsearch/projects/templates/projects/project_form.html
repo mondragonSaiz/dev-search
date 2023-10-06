@@ -4,7 +4,8 @@
   Project Forom
   <h1>
     <form method="POST">
-      {% csrf_token %}
+      {% csrf_token %} {% for field in form %} {{field.label}} {{field}}
+      {%endfor %}{{form.as_p}}
       <input type="submit" />
     </form>
     {% endblock content%}
