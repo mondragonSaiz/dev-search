@@ -14,3 +14,7 @@ def project(request, pk):
     #     if i['id'] == pk :
     #         project= i
     return render(request, 'projects/single-project.html', {'project': project, 'tags': tags})
+
+def create_project(request):
+    context ={}
+    return render(request, "projects/project_form.html", context)
