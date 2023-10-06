@@ -2,7 +2,7 @@
 <h1>{{project.title}}</h1>
 <p>{{project.description}}</p>
 {%if tags %}{% for tag in tags%}
-<li>{{tag.name}}</li>
+<span style="border: 1px solid grey; padding: 5px">{{tag.name}}</span>
 {% endfor %} {% else%}
 <p>No tags.</p>
 {% endif %} {% else %}

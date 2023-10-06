@@ -1,5 +1,23 @@
 {% extends 'main.html' %} {% block content %}
 <h1>All projects</h1>
-{%if projects %} {% for project in projects%}
-<li><a href={% url 'project' project.id%}>{{project.title}}</a> -- {{project.description}}</li>
-{% endfor %} {% endif %} {% endblock content%}
+
+<table style= "border: 1px solid grey; padding: 5px;">
+    <tr>
+        
+        <th style="padding:5px">Project</th>
+        <th style="padding:5px">Votes</th>
+        <th style="padding:5px">Ratio</th>
+        <th style="padding:5px">Date</th>
+        {%if projects %} {% for project in projects%}
+        <tr >
+           
+            <td style="padding:5px"><a href={% url 'project' project.id%}>{{project.title}}</a></td>
+            <td style="padding:5px">{{project.vote_total}}</td>
+            <td style="padding:5px">{{project.vote_ratio}}%</td>
+            <td style="padding:5px">{{project.created_at}}</td>
+        </tr>
+        {% endfor %} {% endif %}
+    </tr>
+</table>
+
+{% endblock content %}
