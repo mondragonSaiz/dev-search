@@ -35,6 +35,10 @@ Python web app to search developers
     ```bash
     python manage.py migrate
     ```
+   4. Run server
+       ```bash
+      python manage.py runserver
+       ```
 
 ## Usage
 - Access the app at  http://127.0.0.1:8000/.
@@ -50,5 +54,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 - Push to the branch: git push origin feature/your-feature
 - Create a pull request
 
-```bash
-python manage.py runserver
+
