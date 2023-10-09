@@ -37,7 +37,18 @@ Python web app to search developers
     ```
 
 ## Usage
+- Access the app at  http://127.0.0.1:8000/.
+- Sign up and log in http://127.0.0.1:8000/admin/ to access the admin panel for CRUD operations on restaurants.
+- Creating an account is required to make changes (CRUD) .
 
+##  Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
+
+- Fork the repository
+- Create your branch: git checkout -b feature/your-feature
+- Make your changes and commit them: git commit -m 'Add some feature'
+- Push to the branch: git push origin feature/your-feature
+- Create a pull request
 
 ```bash
 python manage.py runserver
