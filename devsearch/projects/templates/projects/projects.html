@@ -16,8 +16,8 @@
             <td style="padding:5px">{{project.vote_total}}</td>
             <td style="padding:5px">{{project.vote_ratio}}%</td>
             <td style="padding:5px">{{project.created_at}}</td>
-            <td style="padding:5px"><a href="{% url 'update-project' project.id%}">Edit</a></td>
-            <td style="padding:5px"><a href="{% url 'delete-project' project.id %}">Delete</a></td>
+            <td style="padding:5px"><a class="edit-BTN" href="{% url 'update-project' project.id%}">Edit</a></td>
+            <td style="padding:5px"><a class="delete-BTN" href="{% url 'delete-project' project.id %}">Delete</a></td>
         </tr>
         {% endfor %} {% endif %}
     </tr>
