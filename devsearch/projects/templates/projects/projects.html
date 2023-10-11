@@ -8,6 +8,7 @@
         <th style="padding:5px">Votes</th>
         <th style="padding:5px">Ratio</th>
         <th style="padding:5px">Date</th>
+        <th></th>
         {%if projects %} {% for project in projects%}
         <tr >
            
@@ -15,6 +16,8 @@
             <td style="padding:5px">{{project.vote_total}}</td>
             <td style="padding:5px">{{project.vote_ratio}}%</td>
             <td style="padding:5px">{{project.created_at}}</td>
+            <td style="padding:5px"><a href="{% url 'update-project' project.id%}">Edit</a></td>
+            <td style="padding:5px"><a href="">Delete</a></td>
         </tr>
         {% endfor %} {% endif %}
     </tr>
